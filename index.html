@@ -3,129 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="resources/styles.css">
-    <title>Furniro</title>
+    <title>Formulario de Usuarios</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .error { color: red; }
+        .success { color: green; }
+    </style>
 </head>
 <body>
-    <!-- Barra de Navegacion Sup. -->
-    <nav class="top-nav">
-        <div class="logo">
-            <img src="resources/images/icon/icono.png" alt="Furniro Logo">
-        </div>
-        <div class="title">
-            <h1>Furniro</h1>
-        </div>
-        <ul class="menu">
-            <li><a href="#">Home</a></li>  
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+    <h1>Registro de Usuarios</h1>
+    <form id="userForm">
+        <label for="username">Nombre de usuario (máx 20 caracteres):</label>
+        <input type="text" id="username" required maxlength="20">
+        <br>
+        
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" required>
+        <br>
+        
+        <label for="phone">Número de teléfono (9 seguido de 8 dígitos):</label>
+        <input type="text" id="phone" required pattern="^9\d{8}$">
+        <br>
+        
+        <button type="submit">Enviar</button>
+    </form>
+    
+    <div id="message" class="success"></div>
+    <ul id="userList"></ul>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-            elit tellus, luctus nec ullamcorper mattis.</p>
-    </section>
-
-    <!-- Explorador de la sección de rango -->
-    <section class="categories">
-        <!-- Muestra 1 -->
-        <div class="category">
-            <img src="resources/images/card-1.png" alt="Dining">
-            <h2>Dining</h2>
-        </div>
-        <!-- Muestra 2 -->
-        <div class="category">
-            <img src="resources/images/card-2.png" alt="Living">
-            <h2>Living</h2>
-        </div>
-        <!-- Muestra 3 -->
-        <div class="category">
-            <img src="resources/images/card-3.png" alt="Bedroom">
-            <h2>Bedroom</h2>
-        </div>
-    </section>
-
-    <!-- Catalogo de nuestros Productos -->
-    <section class="products">
-        <!-- Producto 1 -->
-        <div class="product">
-            <img src="resources/images/producto-1.png" alt="Syltherine">
-            <h3>Syltherine</h3>
-            <h4>Stylish cafe chair</h4>
-            <p class="price">$2.500.000</p>
-        </div>
-        <!-- Producto 2 -->
-        <div class="product">
-            <img src="resources/images/producto-2.png" alt="Leviosa">
-            <h3>Leviosa</h3>
-            <h4>Stylish cafe chair</h4>
-            <p class="price">$2.500.000</p>
-        </div>
-        <!-- Producto 3 -->
-        <div class="product">
-            <img src="resources/images/producto-3.png" alt="Lolito">
-            <h3>Lolito</h3>
-            <h4>Luxury big sofa</h4>
-            <p class="price">$7.000.000</p>
-        </div>
-        <!-- Producto 4 -->
-        <div class="product">
-            <img src="resources/images/producto-4.png" alt="Respira">
-            <h3>Respira</h3>
-            <h4>Outdoor bar table and stool</h4>
-            <p class="price">Rp 500.000</p>
-        </div>
-        <!-- Producto 5 -->
-        <div class="product">
-            <img src="resources/images/producto-5.png" alt="Grifo">
-            <h3>Grifo</h3>
-            <h4>Night lamp</h4>
-            <p class="price">Rp 1.500.000</p>
-        </div>
-        <!-- Producto 6 -->
-        <div class="product">
-            <img src="resources/images/producto-6.png" alt="Muggo">
-            <h3>Muggo</h3>
-            <h4>Small mug</h4>
-            <p class="price">Rp 150.000</p>
-        </div>
-        <!-- Producto 7 -->
-        <div class="product">
-            <img src="resources/images/producto-7.png" alt="Pingky">
-            <h3>Pingky</h3>
-            <h4>Cute bed set</h4>
-            <p class="price">Rp 7.000.000</p>
-        </div>
-        <!-- Producto 8 -->
-        <div class="product">
-            <img src="resources/images/producto-8.png" alt="Potty">
-            <h3>Potty</h3>
-            <h4>Minimalist flower pot</h4>
-            <p class="price">Rp 500.000</p>
-        </div>
-        <button class="show-more">Show More</button>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <ul class="footer-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        <ul class="footer-help">
-            <li><a href="#">Payment Options</a></li>
-            <li><a href="#">Returns</a></li>
-            <li><a href="#">Privacy Policies</a></li>
-        </ul>
-        <ul class="footer-newsletter">
-            <input type="email" id="email" pattern=".+@example\.com" size="30" required />
-            <button class="suscribe">SUSCRIBE</button>
-        </ul>
-    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
