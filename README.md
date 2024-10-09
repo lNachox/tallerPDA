@@ -1,14 +1,23 @@
 (Taller) - Desafío Consumo API
 
 > [!NOTE]
-> Seguir las instrucciones para inicializar el proyecto dentro de la carpeta "taller-vue".
-
+> Follow the instructions to initialize the project inside the "taller-vue" folder.
 
 # taller-vue
 
 ## Project setup
 ```
 npm install
+```
+
+## Cd to proyect
+```
+cd .\taller-vue\
+```
+
+## Install Axios
+```
+npm install axios
 ```
 
 ### Compiles and hot-reloads for development
