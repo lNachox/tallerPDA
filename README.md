@@ -1,5 +1,30 @@
 (Taller) - Desafío Consumo API
 
 > [!NOTE]
-> Para inicializar el proyecto. Seguir las instrucciones del README.md dentro de la carpeta "taller-vue".
+> Seguir las instrucciones para inicializar el proyecto dentro de la carpeta "taller-vue".
 
+
+# taller-vue
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
